@@ -223,6 +223,21 @@ img {
   margin-right: 30px;
 }
 
+.icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .benefits h2 {
   margin-top: 0;
   margin-bottom: 0;
@@ -256,7 +271,8 @@ img {
 }
 
 .preview h2,
-.command h2 {
+.command h2,
+.clients h2 {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -291,8 +307,9 @@ img {
   padding-bottom: 30px;
   background: #ffffff;
   overflow: hidden;
-  border-bottom-right-radius: ;
-  border-bottom-left-radius: ;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .command-item .item:not(:last-child) {
@@ -317,6 +334,28 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/* section clients */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-item {
+  display: flex;
+}
+
+.clients-item .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item .item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  padding: auto;
 }
 
 /* section portfolio */
@@ -369,6 +408,11 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   /* padding-bottom: 20px; */
+}
+
+.portfolio-item .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item .item:nth-child(3n) {
