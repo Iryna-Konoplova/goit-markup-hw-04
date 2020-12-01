@@ -28,6 +28,7 @@ h1, подпись кнопки, адресс, лого           #FFFFFF
   --accent-color: #2196f3;
   --hero-title-color: #ffffff;
   --address-color: rgba(255, 255, 255, 0.6);
+  --svg-color: #afb1b8;
 }
 
 body {
@@ -128,6 +129,7 @@ img {
 
 .contacts-header {
   display: flex;
+
   margin-left: auto;
 
   font-weight: 500;
@@ -140,8 +142,14 @@ img {
   margin-left: 50px;
 }
 
+/*.contacts-header .item {
+  display: flex;
+  align-items: center;
+}*/
+
 .contacts-header a {
   color: var(--primary-text-color);
+  /* display: inline-block;*/
 }
 .contacts-header a:hover,
 .contacts-header a:focus {
@@ -152,6 +160,16 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.contacts-icon {
+  /* display: inline-block;*/
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.contacts-icon:hover {
+  fill: var(--accent-color);
 }
 
 /* section hero */
@@ -346,16 +364,36 @@ img {
 .clients-item {
   display: flex;
 }
+.clients-icon {
+  fill: var(--svg-color);
+}
+
+.clients-icon:hover {
+  fill: var(--accent-color);
+}
+
+.clients-link {
+  display: inline-block;
+}
 
 .clients-item .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .clients-item .item {
+  display: flex;
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
-  padding: auto;
+  border: 1px solid;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--svg-color);
+}
+
+.clients-item .item:hover {
+  color: var(--accent-color);
 }
 
 /* section portfolio */
