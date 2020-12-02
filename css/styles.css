@@ -142,34 +142,22 @@ img {
   margin-left: 50px;
 }
 
-/*.contacts-header .item {
+.contacts {
   display: flex;
   align-items: center;
-}*/
-
-.contacts-header a {
   color: var(--primary-text-color);
-  /* display: inline-block;*/
-}
-.contacts-header a:hover,
-.contacts-header a:focus {
-  color: var(--accent-color);
-}
-
-.contacts {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.contacts-icon {
-  /* display: inline-block;*/
-  margin-right: 10px;
-  fill: var(--primary-text-color);
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
 }
 
-.contacts-icon:hover {
-  fill: var(--accent-color);
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* section hero */
@@ -346,13 +334,51 @@ img {
 }
 .command p {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.social-networks {
+  display: flex;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.social-networks .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+/*.social-networks .link:not(:last-child) {
+  margin-right: 10px;
+}*/
+
+.social-networks-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-networks-icon {
+  width: 20px;
+  height: 20px;
+  fill: red; /*var(--svg-color);*/
+}
+
+.social-networks .link:hover {
+  background-color: var(--accent-color);
+  fill: var(--hero-title-color);
+}
+
+/*.social-networks-icon:hover {
+  fill: var(--hero-title-color);
+}*/
 
 /* section clients */
 
@@ -364,36 +390,28 @@ img {
 .clients-item {
   display: flex;
 }
-.clients-icon {
-  fill: var(--svg-color);
-}
-
-.clients-icon:hover {
-  fill: var(--accent-color);
-}
-
-.clients-link {
-  display: inline-block;
-}
 
 .clients-item .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-item .item {
+.clients-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   border: 1px solid;
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-
   color: var(--svg-color);
 }
 
-.clients-item .item:hover {
+.clients-link:hover {
   color: var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 /* section portfolio */
